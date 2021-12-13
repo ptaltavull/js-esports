@@ -1,0 +1,187 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;600;900&display=swap");
+
+/* GLOBAL STYLES */
+
+/* variables css */
+:root {
+  --accent-color: #84bed5;
+  --accent-hover-color: #5fb5d6;
+  --text-color: #171717;
+  --light-color: #fff;
+  --gradient: linear-gradient(rgba(66, 35, 85, 0.9), rgba(8, 35, 85, 0.7));
+  --dark-gradient: linear-gradient(rgba(66, 35, 85, 0.9), rgb(4, 18, 42));
+  --padding-sides: 1.75em;
+  --btn-hover: rgba(255, 255, 255, 0.2);
+  --header-height: 20vh;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* width inclou padding i borders */
+  font-family: Urbanist, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  color: var(--light-color);
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  border: 1px solid var(--light-color);
+  padding: 1em 2em;
+  background: none;
+  color: var(--light-color);
+  cursor: pointer;
+
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  margin-bottom: 2.5em;
+
+  font-size: 1rem;
+}
+
+.btn:focus,
+.btn:hover {
+  background-color: var(--btn-hover);
+  outline: none;
+}
+
+.vertical-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical-form input,
+.vertical-form select {
+  margin: 1em 0;
+}
+
+input,
+select {
+  background-color: var(--light-color);
+  border: 0;
+  padding: 0.5em 0.75em;
+}
+
+/* LLEVAR FLETXES CAMP NOMBRE */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* HEADER STYLES */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: var(--header-height);
+  padding: 1.25em var(--padding-sides);
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-item {
+  list-style: none;
+  padding: 0.75em 0.25em;
+  margin-left: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.menu-item::before {
+  /* element invisible amb la amplada de utilitats 600 */
+  display: block;
+  font-weight: 600;
+  content: attr(title);
+  height: 0;
+  visibility: hidden;
+}
+
+.menu-item:hover {
+  font-weight: 600;
+}
+
+.menu-item-active {
+  font-weight: 600;
+  border-bottom: 2px solid var(--light-color);
+}
+
+/* MAIN STYLES */
+.main-content {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.imc-section {
+  background: var(--gradient), url(../img/imc.jpg);
+}
+
+.fmc-section {
+  background: var(--gradient), url(../img/fmc.jpg);
+}
+
+.cat-section {
+  background: var(--gradient), url(../img/cat.jpg);
+}
+
+.horari-section {
+  background: var(--gradient), url(../img/horari.jpg);
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-section:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+    <link rel="stylesheet" href="assets/css/utilitats.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilitats</title>
+</head>
+<body>
+    <header>
+        <nav class="header-nav">
+            <a href="index.html" class="logo"><h1>AEC</h1></a>
+            <ul class="menu">
+                <li class="menu-item"><a href="index.html">Inici</a></li>
+                <li class="menu-item menu-item-active"><a href="utilitats.html">Utilitats</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <nav class="aside-nav">
+            <ul class="aside-nav__list">
+                <li><a href="#categoria-content" class="aside-nav__link aside-nav__active">Consultar categoria</a></li>
+                <li><a href="#imc-content" class="aside-nav__link">Calculadora IMC</a></li>
+                <li><a href="#fmc-content" class="aside-nav__link">Calculadora FMC</a></li>
+                <li><a href="#horari-content" class="aside-nav__link">Consultar horari</a></li>
+            </ul>
+        </nav>
+        <div class="section-container">
+            <section class="utility-section categoria-content" id="categoria-content"></section>
+            <section class="utility-section imc-content" id="imc-content"></section>
+            <section class="utility-section fmc-content" id="fmc-content"></section>
+            <section class="utility-section horari-content" id="horari-content"></section>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="assets/scripts/imc.js"></script>
+    <script src="assets/scripts/fmc.js"></script>
+    <script src="assets/scripts/categoria.js"></script>
+    <script src="assets/scripts/horari.js"></script>
+</body>
+</html>
