@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Associació esportiva Ciutadella</title>
     </head>
-    <body>
+    <body onload="benvingut()">
         <header>
             <nav class="header-nav">
                 <a href="#" class="logo"><h1>AEC</h1></a>
@@ -16,6 +16,7 @@
                     <li class="menu-item" title="Utilitats"><a href="utilitats.html">Utilitats</a></li>
                 </ul>
             </nav>
+            <div class="calendar-container" id="calendar-container"></div>
         </header>
         <main class="main-content">
             <section class="main-section cat-section">
@@ -28,8 +29,16 @@
                 <a class="btn main-section__btn" href="utilitats.html">Calcula la teva FMC</a>
             </section>
             <section class="main-section horari-section">
-                <a class="btn main-section__btn" href="utilitats.html">Consulta el nostre horari</a></section>
+                <a class="btn main-section__btn" href="utilitats.html">Consulta el nostre horari</a>
+            </section>
         </main>
-        <footer></footer>
+        <footer>
+            <span>Associació Esportiva Ciutadella</span>
+            <span>Pau Taltavull Moll</span>
+            <small onclick="abrirAvisoLegal()">Aviso legal</small>
+        </footer>
+        <script src="assets/scripts/benvingut.js"></script>
+        <script src="assets/scripts/calendari.js"></script>
+        <script src="assets/scripts/aviso_legal.js"></script>
     </body>
 </html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+    <link rel="stylesheet" href="assets/css/utilitats.css"/>
+    <link rel="stylesheet" href="assets/css/login.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilitats</title>
+</head>
+<body>
+    <header>
+        <nav class="header-nav">
+            <a href="index.html" class="logo"><h1>AEC</h1></a>
+            <ul class="menu">
+                <li class="menu-item"><a href="index.html">Inici</a></li>
+                <li class="menu-item menu-item-active"><a href="utilitats.html">Utilitats</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="login-main">
+        <form class="vertical-form" action="index.html">
+            <label for="user">Introdueix el teu nom de usuari</label>
+            <input type="text" id="user" required>
+            <label for="psw">Introduiex la teva clau</label>
+            <input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$%&#\-_])[A-Za-z\d@$%&#\-_]{8,16}$" id="psw" required>
+            <input type="submit" class="btn" value="Entrar">
+        </form>
+        <div class="message" id="message">
+            <h3>La clau ha de tenir:</h3>
+            <p id="lowercase-letter" class="invalid">Una lletra minúscula</p>
+            <p id="uppercase-letter" class="invalid">Una lletra majúscula</p>
+            <p id="number" class="invalid">Un nombre</p>
+            <p id="special-char" class="invalid">Un caràcter especial (-_@#%&$)</p>
+            <p id="lenght" class="invalid">Entre 8 i 16 caracters</p>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="assets/scripts/u2e9_contrasena.js"></script>
+</body>
+</html>

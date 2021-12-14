@@ -149,6 +149,42 @@ header {
   border-bottom: 2px solid var(--light-color);
 }
 
+/* CALENDAR STYLE */
+.calendar-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0.5em;
+  border: 1px solid var(--light-color);
+  color: var(--light-color);
+  width: fit-content;
+  position: absolute;
+  top: 1.25em;
+  left: 50%; /* 50% al principi de lelement per aço tenim que fer el transform */
+  -webkit-transform: translateX(
+    -50%
+  ); /* webkit: per si algun navegador no acepta la propietat transform */
+  transform: translateX(-50%); /* de la seva amplada resta la mitad */
+  padding: 0.1em 0.1em 0.25em 0.4em;
+  align-items: center;
+  letter-spacing: 0.1em;
+}
+
+.day-info {
+  font-size: 3rem;
+  grid-row: 1 / 3;
+}
+
+.month-info {
+  text-transform: uppercase;
+  align-self: flex-start;
+  letter-spacing: 0.15em;
+}
+
+.year-info {
+  align-self: flex-end;
+}
+
 /* MAIN STYLES */
 .main-content {
   min-height: 100vh;
