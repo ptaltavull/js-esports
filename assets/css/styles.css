@@ -221,3 +221,28 @@ header {
 .main-section:hover {
   cursor: pointer;
 }
+
+/* FOOTER STYLE */
+
+span {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  column-gap: 3em;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background-color: rgb(4, 18, 42);
+  color: var(--light-color);
+  padding: 3em;
+}
+.legal-span, .email-span {
+  cursor: pointer;
+  border-bottom: 1px solid var(--light-color);
+}
