@@ -10,11 +10,16 @@ const navList = [
   document.getElementById("fmc-li"),
   document.getElementById("horari-li"),
 ];
-window.onscroll = () => {
+
+window.addEventListener("load", setActiveSection);
+window.addEventListener("scroll", setActiveSection);
+
+function setActiveSection() {
+  console.log("patates");
   let currentSection = "";
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
-    if (scrollY >= sectionTop) {
+    if (scrollY >= sectionTop - 550) {
       currentSection = section.getAttribute("id");
     }
   });
@@ -24,4 +29,4 @@ window.onscroll = () => {
       li.classList.add("aside-nav__active");
     }
   });
-};
+}

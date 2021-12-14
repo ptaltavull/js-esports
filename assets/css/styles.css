@@ -14,6 +14,7 @@
   --padding-sides: 1.75em;
   --btn-hover: rgba(255, 255, 255, 0.2);
   --header-height: 20vh;
+  --shadow: rgba(43, 10, 63, 0.3);
 }
 
 *,
@@ -68,6 +69,9 @@ ul {
 .vertical-form {
   display: flex;
   flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 5em calc(var(--padding-sides) * 4);
+  box-shadow: 2px 2px 15px 10px var(--shadow);
 }
 
 .vertical-form input,
@@ -237,12 +241,13 @@ footer {
   height: 5vh;
   column-gap: 3em;
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   background-color: rgb(4, 18, 42);
   color: var(--light-color);
   padding: 3em;
 }
-.legal-span, .email-span {
+.legal-span,
+.email-span {
   cursor: pointer;
   border-bottom: 1px solid var(--light-color);
 }

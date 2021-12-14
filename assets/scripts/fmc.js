@@ -20,7 +20,7 @@ function createFormFmcContent() {
           <option value="mujer">Mujer</option>
         </select>
         <label for="weight">Edat:</label>
-        <input type="number" id="age" placeholder="35" min="0" max="120" required>anys
+        <input type="number" id="age" placeholder="35" min="0" max="120" required>
         <button class="btn" type="submit">Calcular FMC</button>
     `;
 }

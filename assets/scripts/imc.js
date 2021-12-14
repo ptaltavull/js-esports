@@ -16,9 +16,9 @@ formImcEl.addEventListener("submit", (event) => {
 function createFormImcContent() {
   formImcEl.innerHTML = `
         <label for="height">Altura:</label>
-        <input type="number" id="height" placeholder="178" required min="50" max="300">cm
+        <input type="number" id="height" placeholder="178 cm" required min="50" max="300">
         <label for="weight">Pes:</label>
-        <input type="number" id="weight" step=".01" placeholder="75.5" min="20" max="500" required>kg
+        <input type="number" id="weight" step=".01" placeholder="75.5 kg" min="20" max="500" required>
         <button class="btn" type="submit">Calcular IMC</button>
   `;
 }
@@ -61,6 +61,10 @@ function printResultImc(imc) {
     }
     imcListEl.appendChild(liEl);
   });
+
+  if (!check) {
+    imcListEl.lastChild.classList.add("active-imc");
+  }
 }
 
 createFormImcContent();

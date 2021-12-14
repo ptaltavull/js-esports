@@ -1,17 +1,34 @@
+body {
+  color: var(--light-color);
+  min-height: 100vh;
+  background: var(--dark-gradient);
+  background-repeat: no-repeat;
+}
 .login-main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
+  min-height: 90vh;
+  margin-top: 10vh;
 }
 
 .message {
-  display: none;
+  visibility: hidden;
+  margin-top: 2em;
+}
+
+.message-h3 {
+  text-align: center;
+}
+
+.invalid,
+.valid {
+  margin-left: 3em;
 }
 
 .invalid {
-  color: red;
+  color: rgb(240, 82, 166);
 }
 
 .invalid::before {
@@ -21,7 +38,7 @@
 }
 
 .valid {
-  color: green;
+  color: rgb(92, 224, 68);
 }
 
 .valid:before {

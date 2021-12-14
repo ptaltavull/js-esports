@@ -8,12 +8,12 @@ const specialCharEl = document.getElementById("special-char");
 inputPswEl.addEventListener("focus", () => {
   //usr te clicat l' input de la psw
   console.log("dsaf");
-  document.getElementById("message").style.display = "block";
+  document.getElementById("message").style.visibility = "visible";
 });
 
 inputPswEl.addEventListener("blur", () => {
   //usr clica defora del psw
-  document.getElementById("message").style.display = "none";
+  document.getElementById("message").style.visibility = "hidden";
 });
 
 inputPswEl.addEventListener("keyup", () => {

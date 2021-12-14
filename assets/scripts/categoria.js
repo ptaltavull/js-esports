@@ -15,7 +15,7 @@ formCategoriaEl.addEventListener("submit", (event) => {
 function createFormCategoriaContent() {
   formCategoriaEl.innerHTML = `
         <label for="age-cat">Edat</label>
-        <input type="number" id="age-cat" placeholder="35" min="5" max="120" required>anys
+        <input type="number" id="age-cat" placeholder="35" min="5" max="120" required>
         <button class="btn" type="submit">Calcular cat</button>
     `;
 }
